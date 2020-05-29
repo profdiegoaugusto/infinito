@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #FCFCFC;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+}
+
+header, section {
+    width: 100%;
+    padding: 32px;
+    border: 1px solid black;
+}
+
+header {
+    height: 20vh;
+}
+
+section {
+    height: 80vh;
+}
+
+.gradient-azul {
+    background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+@media all and (min-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    header, section {
+        width: 50vw;
+        height: 100%;
+        text-align: justify;
+    }
+
+    header {
+        order: 2;
+    }
+
+    header {
+        order: 1;
+    }
+
+}
